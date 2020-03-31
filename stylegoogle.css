@@ -1,0 +1,450 @@
+/*Création de la box "conteneur"*/
+
+	#conteneur
+		{
+			display: flex;
+			flex-direction: column;
+
+		}
+
+/*Box Header*/
+
+	.header
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			margin-bottom: 3rem;
+		}
+
+	.link_header
+		{
+			color: rgba(0,0,0,0.87);
+			text-decoration: none;
+		}
+
+	.link_header:hover
+		{
+			color: rgba(0,0,0,0.87);
+			text-decoration: underline;
+		}
+
+
+	.button_txt
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			padding-right: 2,5px;
+			font-family: arial;
+			font-size: 12px;
+		}
+
+		.gmail
+			{
+
+				padding: 10px;
+			}
+
+		.images
+			{
+				padding: 10px;
+			}
+
+	
+	.button_img
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			padding-left: 2,5px;
+		}
+
+		.menu
+			{
+				padding: 5px;
+			}
+
+				.img_menu
+				{
+				    display: block;
+				    position: relative;
+				    height: 30px;
+				    width: 30px;
+				}
+
+		.compte
+			{
+				padding: 5px;
+			}
+
+		.profil_pic
+			{
+				    -webkit-background-size: 32px 32px;
+				    background-size: 32px 32px;
+				    -webkit-border-radius: 50%;
+				    border-radius: 50%;
+				    display: block;
+				    overflow: hidden;
+				    position: relative;
+				    height: 32px;
+				    width: 32px;
+			}
+
+/*Box main*/
+	.main
+		{
+			display: flex;
+  			flex-direction: column;
+  			justify-content: center;
+  			align-items: center;
+  			position: relative;
+  			margin-top: 10rem;
+			padding-top: 10px;
+			padding: 10px;
+			margin-bottom: 30px
+		}
+
+		/*logo google*/
+
+			.logo
+				{
+					
+		   			display: flex;
+		   			align-items: center;
+		   			justify-content: center;
+		   			padding-top: 10px;
+					padding: 0px;
+					margin-bottom: 10px;
+					margin: 20px;
+				}
+
+			.google_logo
+				{
+					max-width: 50%;
+		   			height: auto;
+		   		
+				}
+
+		/*barre de recherche*/
+			
+			.search_bloc
+				{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					align-content: space-between;
+					height: 44px;
+		   			width: 482px;
+		   			border-radius: 30px;
+			    	background-color: white;
+			    	border: 1px solid #f2f2f2;
+				}
+
+			.search_bloc:hover 
+				{
+		   			 box-shadow: 0 0 1em grey
+				}
+
+			.loupe
+				{
+					display: block;
+					background-color: white;
+					flex-grow: 1;   
+					width: 5px;
+					height: auto;
+					overflow: hidden;
+   					margin-left: 15px
+				}
+
+				.loupe_img
+					{
+						width: 35%
+					}
+
+			.barre
+				{
+					flex-grow: 8;
+					text-align: center;
+					font-family: arial;
+					font-size: 12px;
+					text-align: left;
+
+				}
+
+			.mic
+				{
+					display: flex;
+					flex-grow: 1;   
+					width: 5px;
+					align-items: flex-end;
+				}
+
+				.mic_img
+					{
+						width: 25%
+					}
+
+		/*bouton recherche et chance*/
+
+			.boutons_recherche
+				{
+					display: flex;
+					flex-direction: row;
+					align-items: center;
+					justify-content: center;
+					align-content: space-between;
+					height: 50px;
+		   			width: 500px;
+			    	padding-top: 18px;
+				}
+
+
+					.recherche
+						{
+							background: #f2f2f2;
+							
+							border: 1px solid #f2f2f2;
+   							border-radius: 4px;
+
+							height: 36px;
+							min-width: 50px;
+
+							margin: 11px 4px;
+							padding: 0px 16px;
+
+							cursor: pointer;
+
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+						}
+
+					.recherche:hover 
+						{
+				   			 box-shadow: 0 0 0.5em grey
+						}
+
+							.txt_recherche
+								{
+									font-family: arial;
+									font-size: 14px;
+									color: #5F6368;
+									text-decoration: none;
+								}
+
+							.txt_recherche:hover
+								{
+									font-family: arial;
+									font-size: 14px;
+									text-decoration: none;
+									color: rgba(0,0,0,0.87);
+								}
+
+
+					.recherche:active
+						{
+				   			 border: 1px solid blue;
+						}
+
+					.chance
+						{
+							background: #f2f2f2;
+							
+							border: 1px solid #f2f2f2;
+   							border-radius: 4px;
+
+							line-height: 27px;
+						   	height: 36px;
+						   	min-width: 54px;
+
+							margin: 11px 4px;
+							padding: 0px 16px;
+
+							cursor: pointer;
+
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+						}
+
+					.chance:hover 
+						{
+				   			 box-shadow: 0 0 0.5em grey
+						}
+
+					.chance:active
+						{
+				   			 border: 1px solid blue;
+						}
+
+							.txt_chance
+								{
+									font-family: arial;
+									font-size: 14px;
+									color: #5F6368;
+									text-decoration: none;
+								}
+
+							.txt_chance:hover
+								{
+									font-family: arial;
+									font-size: 14px;
+									text-decoration: none;
+									color: rgba(0,0,0,0.87);
+								}
+
+			/*texte prévention*/
+
+					.random_txt
+						{
+							
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: center;
+							align-content: space-between;
+							height: 50px;
+				   			width: 500px;
+				   			margin: 15px;
+
+							font-family: arial;
+							font-size: 13px;
+
+							text-align: center;
+							text-decoration: none;
+						}
+
+					.random_txt:hover
+						{
+					
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							justify-content: center;
+							align-content: space-between;
+							height: 50px;
+				   			width: 500px;
+				   			margin: 15px;
+
+							font-family: arial;
+							font-size: 13px;
+
+							text-align: center;
+							text-decoration: underline;
+						}	
+
+						.random_main
+							{
+								height: 45px;
+				   				width: 45px;
+				   				margin-right: 10px;
+							}
+
+			/*texte langue*/
+
+					.langue
+						{	
+						    display: inline-block;
+   							line-height: 28px;
+							display: flex;
+
+							font-family: arial;
+							font-size: 13px;
+							text-decoration: none;
+						}
+
+			/*footer 1*/
+
+				.footer1
+					{
+						display: flex;
+						flex-direction: row;
+						justify-content: flex-start;
+						background: #f2f2f2;
+						border-top: 1px solid #e4e4e4;
+						margin-top: auto;
+					}		
+
+					.element0
+							{
+								margin: 10px 0px 10px 27px;
+								font-family: arial;
+								font-size: 15px;
+								text-align: center;
+								color: rgba(0,0,0,.54);
+							}
+
+			/*footer 2*/
+
+
+		footer
+
+			{
+			    bottom: 0;
+			    position: fixed;
+			    width: 100%;
+			}
+
+				.footer2
+					{
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						background: #f2f2f2;
+						border-top: 1px solid #e4e4e4;
+						flex-wrap: wrap;
+						padding-right: 27px;
+						padding-left: 27px;
+					}
+
+						.element1
+							{
+								display: flex;
+								flex-direction: row;
+								justify-content: flex-start;
+								align-items: center;
+								flex-wrap: wrap;
+							}
+
+							.element1bis
+								{
+									margin: 10px 0px 10px 0px;
+									padding: 0 27px 0 0;
+									font-family: arial;
+									font-size: 14px;
+									text-align: center;
+								}
+
+						.element2
+							{
+								display: flex;
+								flex-direction: row;
+								justify-content: flex-end;
+								align-items: center;
+								flex-wrap: wrap;
+							}
+
+							.element2bis
+								{
+									margin: 10px 0px 10px 0px;
+									padding: 0 27px 0 0;
+									font-family: arial;
+									font-size: 14px;
+									text-align: center;
+								}	
+
+						.linkfooter
+								{
+									color: rgba(0,0,0,.54);
+									text-decoration: none;
+								}
+
+						.linkfooter:hover
+							{
+								color: rgba(0,0,0,.54);
+								text-decoration: underline;
+							}
